@@ -1,17 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class WallBoundariesBehaviour : MonoBehaviour
 {
+    public GameObject topWall, leftWall, rightWall;
 
-    public GameObject topWall;
-    public GameObject leftWall;
-    public GameObject rightWall;
-
-    Vector2 leftBorder;
-    Vector2 rightBorder;
-    Vector2 topBorder;
+    Vector2 leftBorder, rightBorder, topBorder;
 
     void Start()
     {

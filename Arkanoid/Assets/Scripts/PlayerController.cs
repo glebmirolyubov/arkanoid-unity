@@ -2,11 +2,9 @@
 
 public class PlayerController : MonoBehaviour
 {
-
     float playerSpeed = 10.0f;
 
-    Vector3 leftBorder;
-    Vector3 rightBorder;
+    Vector3 leftBorder, rightBorder;
 
     void Start()
     {
@@ -26,7 +24,5 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector2(rightBorder.x, transform.position.y);
         }
-
-        //transform.position = new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, 0f);
     }
 }
